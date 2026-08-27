@@ -1,32 +1,30 @@
-//Declaración de variables
-//var num1;
-//var num2;
-/*Se suman las variables num1 y num2 y el resultado se guarda en la variable suma
-var suma = num1 + num2;
-*/
-//Se muestra el resultado en la consola
-console.log('La suma es: '+ suma)
 
-//Declaración de variables
 
-//Se suman las variables num1 y num2 y el resultado se guarda en la variable suma
-var resta = num1 - num2;
-//Se muestra el resultado en la consola
-console.log('La resta es: '+ resta)
+function operacion() {
 
-//Declaración de variables
+    const suma = document.getElementById('suma');
+    const resta = document.getElementById('resta');
+    const mult = document.getElementById('mult');
+    const div = document.getElementById('div');
 
-//Se suman las variables num1 y num2 y el resultado se guarda en la variable suma
-var mult = num1 * num2;
-//Se muestra el resultado en la consola
-console.log('La multiplicación es: '+ mult)
+    if (suma.checked) {
+        sumar();
+    }
 
-//Declaración de variables
+    else if (resta.checked) {
+        restar();
+    }
 
-//Se suman las variables num1 y num2 y el resultado se guarda en la variable suma
-var div = num1 / num2;
-//Se muestra el resultado en la consola
-console.log('La división es: '+ div)
+    else if (mult.checked) {
+        mult();
+        //console.log("Elegiste multiplicación");
+    }
+
+    else if (div.checked) {
+        //console.log("Elegiste división");
+        div();
+    }
+}
 
 function sumar() {
 
@@ -37,6 +35,39 @@ function sumar() {
     const suma = num1 + num2;
 
     document.getElementById('result').value = suma;
+}
+
+function restar() {
+
+    const num1 = parseInt(document.getElementById('num1').value);
+
+    const num2 = parseInt(document.getElementById('num2').value);
+
+    const resta = num1 - num2;
+
+    document.getElementById('result').value = resta;
+}
+
+function mult() {
+
+    const num1 = parseInt(document.getElementById('num1').value);
+
+    const num2 = parseInt(document.getElementById('num2').value);
+
+    const mult = num1 * num2;
+
+    document.getElementById('result').value = mult;
+}
+
+function div() {
+
+    const num1 = parseInt(document.getElementById('num1').value);
+
+    const num2 = parseInt(document.getElementById('num2').value);
+
+    const div = num1 / num2;
+
+    document.getElementById('result').value = div;
 }
 /*
 function suma(num1,num2){
