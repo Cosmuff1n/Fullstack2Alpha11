@@ -16,13 +16,13 @@ function operacion() {
     }
 
     else if (mult.checked) {
-        mult();
+        multi();
         //console.log("Elegiste multiplicación");
     }
 
     else if (div.checked) {
         //console.log("Elegiste división");
-        div();
+        divi();
     }
 }
 
@@ -48,7 +48,7 @@ function restar() {
     document.getElementById('result').value = resta;
 }
 
-function mult() {
+function multi() {
 
     const num1 = parseInt(document.getElementById('num1').value);
 
@@ -59,7 +59,7 @@ function mult() {
     document.getElementById('result').value = mult;
 }
 
-function div() {
+function divi() {
 
     const num1 = parseInt(document.getElementById('num1').value);
 
