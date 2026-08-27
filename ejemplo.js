@@ -69,12 +69,15 @@ function divi() {
 
     document.getElementById('result').value = div;
 }
-/*
-function suma(num1,num2){
-return suma = num1 + num2;
-}*/
 
-//console.log("pojo")
+
+
+
+
+
+
+
+/*
 try{
 edad = 19
 }
@@ -95,5 +98,5 @@ if(edad > 0){
         }
     }
 }
-else console.log("Ingrese un número positivo")
+else console.log("Ingrese un número positivo")*/
 
