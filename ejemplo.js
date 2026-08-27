@@ -30,7 +30,7 @@ var div = num1 / num2;
 //Se muestra el resultado en la consola
 console.log('La división es: '+ div)
 
-console.log("pojo")
+//console.log("pojo")
 try{
 edad = 19
 }
