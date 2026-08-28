@@ -70,20 +70,37 @@ function divi() {
     document.getElementById('result').value = div;
 }
 
-const numArray1 = []
-/*
-function addToArrayOne(arrayLenght){
-    for (let i = 0; i < arrayLenght; i++) {
-  //console.log(fruits[i]);
+function addArrayOne(numbArrayOne) {
 
-}}*/
+    let arrayOne = [1];
 
-function addToArrayOne(arrayLenght){
+    for (let i = 1; i < numbArrayOne; i++) {
 
-    return n*=2
-  //console.log(fruits[i]);
-  
+        arrayOne[i] = arrayOne[i - 1] * 2;
+
+    }
+
+    return arrayOne;
 }
+
+function findMaxNum() {
+
+    const arrayTwo = [5, 12, 33, 13, 15, 16, 7, 11, 9, 1];
+
+    let maxNum = arrayTwo[0];
+
+    for (let i = 1; i < arrayTwo.length; i++) {
+
+        if (arrayTwo[i] > maxNum) {
+            maxNum = arrayTwo[i];
+        }
+
+    }
+
+    return maxNum;
+}
+
+console.log(findMaxNum());
 
 
 
