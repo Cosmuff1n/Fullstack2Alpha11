@@ -191,5 +191,15 @@ function orderAscending() {
 
 console.log(orderAscending());
 
+//Ejercicio 8
 
+function writeInCaps(fname, lname) {
+  return fname.toUpperCase() + " " + lname.toUpperCase();
+}
 
+firstname = "Pepe";
+lastname = "Pulga";
+
+console.log(writeInCaps(firstname,lastname));
+
+//Ejercicio 9  
