@@ -70,10 +70,20 @@ function divi() {
     document.getElementById('result').value = div;
 }
 
+const numArray1 = []
+/*
+function addToArrayOne(arrayLenght){
+    for (let i = 0; i < arrayLenght; i++) {
+  //console.log(fruits[i]);
 
+}}*/
 
+function addToArrayOne(arrayLenght){
 
-
+    return n*=2
+  //console.log(fruits[i]);
+  
+}
 
 
 
