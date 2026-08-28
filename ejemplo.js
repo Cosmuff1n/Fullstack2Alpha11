@@ -1,4 +1,4 @@
-
+//Ejercicio 1
 
 function operacion() {
 
@@ -70,6 +70,26 @@ function divi() {
     document.getElementById('result').value = div;
 }
 
+//Ejercicio 2
+
+edad = 19
+if(edad > 0){
+    if(edad < 18) console.log("Persona es menor de edad")
+    else{
+        if(edad<65) console.log("Persona es adulto")
+
+        else{
+            if(edad<85) console.log("Persona es adulto mayor")
+                else{
+            console.log("Persona es de años dorados")
+            }
+        }
+    }
+}
+else console.log("Ingrese un número positivo")
+
+//Ejercicio 3
+
 function addArrayOne(numbArrayOne) {
 
     let arrayOne = [1];
@@ -82,6 +102,8 @@ function addArrayOne(numbArrayOne) {
 
     return arrayOne;
 }
+
+//Ejercicio 4
 
 function findMaxNum() {
 
@@ -100,6 +122,8 @@ function findMaxNum() {
     return maxNum;
 }
 
+//Ejercicio 5
+
 console.log(findMaxNum());
 
 const daysOfWeek = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"];
@@ -114,30 +138,58 @@ else{
 }
 }
 
+//Ejercicio 6
+
 dayNumber = 3;
 
 console.log(getDayOfWeek(3));
 
-/*
-try{
-edad = 19
-}
-catch{
-    exception("error, debe ser numero entero")
+
+NumArrayFour = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,];
+
+function searchNumberInArray(numberToSearch) {
+console.log("Buscando el número: " + numberToSearch);
+if(NumArrayFour.includes(numberToSearch)) {
+    console.log("Número encontrado.");
+    }
+else {
+    console.log("No se encontró el número que busca.");
 }
 
-if(edad > 0){
-    if(edad < 18) console.log("Persona es menor de edad")
-    else{
-        if(edad<65) console.log("Persona es adulto")
+}
 
-        else{
-            if(edad<85) console.log("Persona es adulto mayor")
-                else{
-            console.log("Persona es de años dorados")
+numberToSearch = 145;
+
+searchNumberInArray(numberToSearch);
+
+numberToSearch = 2;
+searchNumberInArray(numberToSearch);
+
+//Ejercicio 7
+
+const arrayFive = [5, 12, 33, 13, 15, 16, 7, 11, 9, 1];
+
+function orderAscending() {
+
+    for (let i = 0; i < arrayFive.length; i++) {
+
+        for (let j = 0; j < arrayFive.length - 1; j++) {
+
+            if (arrayFive[j] > arrayFive[j + 1]) {
+
+                let temporary = arrayFive[j];
+
+                arrayFive[j] = arrayFive[j + 1];
+
+                arrayFive[j + 1] = temporary;
             }
         }
     }
+
+    return arrayFive;
 }
-else console.log("Ingrese un número positivo")*/
+
+console.log(orderAscending());
+
+
 

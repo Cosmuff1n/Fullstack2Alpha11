@@ -1,21 +1,25 @@
-/*
-Dado un arreglo de String que contiene los días de la semana, cree una función
-que le permita obtener un día en particular si se recibe su número
-correspondiente, por ejemplo: 1 = lunes, 7 = domingo
-*/
+/*Cree un programa que dado un arreglo de números desordenados los ordene
+ascendentemente*/
+const arrayFive = [5, 12, 33, 13, 15, 16, 7, 11, 9, 1];
 
-const daysOfWeek = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"];
+function orderAscending() {
 
-function getDayOfWeek(dayNumber) {
-if(dayNumber < 1 || dayNumber > 7) {
-    console.log("Número de día inválido. Por favor ingrese un número entre 1 y 7.");
-    return null;
+    for (let i = 0; i < arrayFive.length; i++) {
+
+        for (let j = 0; j < arrayFive.length - 1; j++) {
+
+            if (arrayFive[j] > arrayFive[j + 1]) {
+
+                let temporary = arrayFive[j];
+
+                arrayFive[j] = arrayFive[j + 1];
+
+                arrayFive[j + 1] = temporary;
+            }
+        }
+    }
+
+    return arrayFive;
 }
-else{
-  return daysOfWeek[dayNumber - 1];
-}
-}
 
-dayNumber = 3;
-
-console.log(getDayOfWeek(3));
+console.log(orderAscending());
