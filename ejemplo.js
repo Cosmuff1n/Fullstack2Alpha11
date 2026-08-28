@@ -102,7 +102,21 @@ function findMaxNum() {
 
 console.log(findMaxNum());
 
+const daysOfWeek = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"];
 
+function getDayOfWeek(dayNumber) {
+if(dayNumber < 1 || dayNumber > 7) {
+    console.log("Número de día inválido. Por favor ingrese un número entre 1 y 7.");
+    return null;
+}
+else{
+  return daysOfWeek[dayNumber - 1];
+}
+}
+
+dayNumber = 3;
+
+console.log(getDayOfWeek(3));
 
 /*
 try{
