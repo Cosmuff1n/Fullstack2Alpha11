@@ -70,6 +70,8 @@ function divi() {
     document.getElementById('result').value = div;
 }
 
+console.log("Ejercicio 1: Calculadora");
+
 //Ejercicio 2
 
 edad = 19

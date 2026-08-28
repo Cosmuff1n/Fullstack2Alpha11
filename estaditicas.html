@@ -1,0 +1,83 @@
+<!-- 1. Validar el formulario con JavaScript
+
+Este es el primer objetivo importante. La guía te pide crear un archivo llamado funciones.js, 
+conectarlo con tus páginas HTML y usarlo para comprobar que los campos del formulario de contacto no estén vacíos.
+Piensa el proceso así:
+
+Crea el archivo JavaScript. En la misma estructura de tu proyecto debes tener un archivo llamado funciones.js.
+Puedes ponerlo junto a tus HTML o, si tu proyecto está ordenado por carpetas, dentro de una carpeta para JavaScript.
+Conecta ese archivo con tus HTML. El navegador no sabe que funciones.js existe hasta que el HTML lo cargue. 
+La guía dice que, aunque realmente lo necesites solamente en la página que contiene el formulario, es conveniente que todas tus páginas carguen ese archivo.
+Ubica el formulario de contacto que ya tienes. Ahí probablemente tienes cosas como nombre, correo, teléfono, mensaje, etc. 
+No necesitas crear otro formulario si ya existe.
+Identifica cada campo desde JavaScript. Tu función necesitará poder localizar cada campo del formulario para preguntarle algo equivalente 
+
+a: “¿Qué valor contiene este campo?”
+Crea una función cuya responsabilidad sea validar el formulario. 
+No debería hacer cálculos ni cambiar de página todavía. Su trabajo principal será revisar los campos.
+
+Dentro de esa función, revisa los campos uno por uno. La lógica mental sería:
+Campo nombre → ¿está vacío?
+Campo correo → ¿está vacío?
+Campo mensaje → ¿está vacío?
+
+Y así sucesivamente.
+Si encuentras un campo vacío, informa cuál es. Eso es importante: la guía no pide simplemente decir “el formulario está incorrecto”. 
+Dice específicamente que debes indicar qué campos están vacíos. Haz que la validación ocurra cuando se presione el botón de procesamiento. 
+Es decir, el usuario llena el formulario y, cuando intenta enviarlo/procesarlo, recién ahí ejecutas tu función.
+Tu algoritmo, expresado solamente en español, sería algo parecido a:
+Obtener los campos → revisar cada campo → detectar los vacíos → mostrar cuáles faltan.
+Ese es todo el corazón del ejercicio 1.
+
+
+2. Crear estadísticas.html
+Después necesitas agregar una página nueva al sitio llamada estadísticas.html. 
+La guía pide que mantenga el mismo estilo visual de las otras páginas.
+Eso significa que no deberías crear una página completamente distinta. 
+Reutiliza mentalmente la estructura de tus otras páginas: navegación, Bootstrap, estilos propios, encabezado, etc.
+Luego viene la parte importante: una tabla.
+
+La tabla debe tener 5 columnas y como mínimo 10 filas, y los datos pueden ser escogidos por ustedes.
+Como el proyecto trata de una empresa que vende productos por internet, podrías imaginar columnas como:
+
+Producto | Categoría | Precio | Cantidad vendida | Stock
+
+No tienes que usar precisamente esas; la guía permite que el equipo decida los datos.
+Cuando tengas tu tabla normal funcionando, recién pasas a DataTables.
+DataTables es una herramienta que toma una tabla HTML normal y le agrega funcionalidades automáticamente, como búsqueda, ordenamiento y paginación. 
+La guía pide aplicar ese plugin a la tabla y recomienda cargar sus archivos JavaScript y CSS mediante CDN.
+
+Aquí el orden importa bastante:
+
+Primero haz funcionar la tabla normal.
+
+Después:
+
+Conecta DataTables.
+
+Después:
+
+Indícale a DataTables cuál es tu tabla.
+
+Y finalmente prueba cosas como buscar registros u ordenar una columna.
+
+No intentes hacer todo junto desde el comienzo. Si haces tabla + DataTables + Bootstrap + JavaScript a la vez y algo falla, 
+no vas a saber qué parte produjo el error. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <h1>Welcome to My Website</h1>  
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
