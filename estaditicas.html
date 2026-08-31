@@ -1,99 +1,147 @@
-<!-- 1. Validar el formulario con JavaScript
-
-Este es el primer objetivo importante. La guía te pide crear un archivo llamado funciones.js, 
-conectarlo con tus páginas HTML y usarlo para comprobar que los campos del formulario de contacto no estén vacíos.
-Piensa el proceso así:
-
-Crea el archivo JavaScript. En la misma estructura de tu proyecto debes tener un archivo llamado funciones.js.
-Puedes ponerlo junto a tus HTML o, si tu proyecto está ordenado por carpetas, dentro de una carpeta para JavaScript.
-Conecta ese archivo con tus HTML. El navegador no sabe que funciones.js existe hasta que el HTML lo cargue. 
-La guía dice que, aunque realmente lo necesites solamente en la página que contiene el formulario, es conveniente que todas tus páginas carguen ese archivo.
-Ubica el formulario de contacto que ya tienes. Ahí probablemente tienes cosas como nombre, correo, teléfono, mensaje, etc. 
-No necesitas crear otro formulario si ya existe.
-Identifica cada campo desde JavaScript. Tu función necesitará poder localizar cada campo del formulario para preguntarle algo equivalente 
-
-a: “¿Qué valor contiene este campo?”
-Crea una función cuya responsabilidad sea validar el formulario. 
-No debería hacer cálculos ni cambiar de página todavía. Su trabajo principal será revisar los campos.
-
-Dentro de esa función, revisa los campos uno por uno. La lógica mental sería:
-Campo nombre → ¿está vacío?
-Campo correo → ¿está vacío?
-Campo mensaje → ¿está vacío?
-
-Y así sucesivamente.
-Si encuentras un campo vacío, informa cuál es. Eso es importante: la guía no pide simplemente decir “el formulario está incorrecto”. 
-Dice específicamente que debes indicar qué campos están vacíos. Haz que la validación ocurra cuando se presione el botón de procesamiento. 
-Es decir, el usuario llena el formulario y, cuando intenta enviarlo/procesarlo, recién ahí ejecutas tu función.
-Tu algoritmo, expresado solamente en español, sería algo parecido a:
-Obtener los campos → revisar cada campo → detectar los vacíos → mostrar cuáles faltan.
-Ese es todo el corazón del ejercicio 1.
-
-
-2. Crear estadísticas.html
-Después necesitas agregar una página nueva al sitio llamada estadísticas.html. 
-La guía pide que mantenga el mismo estilo visual de las otras páginas.
-Eso significa que no deberías crear una página completamente distinta. 
-Reutiliza mentalmente la estructura de tus otras páginas: navegación, Bootstrap, estilos propios, encabezado, etc.
-Luego viene la parte importante: una tabla.
-
-La tabla debe tener 5 columnas y como mínimo 10 filas, y los datos pueden ser escogidos por ustedes.
-Como el proyecto trata de una empresa que vende productos por internet, podrías imaginar columnas como:
-
-Producto | Categoría | Precio | Cantidad vendida | Stock
-
-No tienes que usar precisamente esas; la guía permite que el equipo decida los datos.
-Cuando tengas tu tabla normal funcionando, recién pasas a DataTables.
-DataTables es una herramienta que toma una tabla HTML normal y le agrega funcionalidades automáticamente, como búsqueda, ordenamiento y paginación. 
-La guía pide aplicar ese plugin a la tabla y recomienda cargar sus archivos JavaScript y CSS mediante CDN.
-
-Aquí el orden importa bastante:
-
-Primero haz funcionar la tabla normal.
-
-Después:
-
-Conecta DataTables.
-
-Después:
-
-Indícale a DataTables cuál es tu tabla.
-
-Y finalmente prueba cosas como buscar registros u ordenar una columna.
-
-No intentes hacer todo junto desde el comienzo. Si haces tabla + DataTables + Bootstrap + JavaScript a la vez y algo falla, 
-no vas a saber qué parte produjo el error. -->
+</html>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Website</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+  <title>Estadísticas</title>
+
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- DataTables -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.3/css/dataTables.dataTables.css">
+
 </head>
 
+
 <body>
-  <main>
-     <form>
-      <label>Nombre:</label>
-      <input type="text" id="nombre" placeholder="Tu nombre">
 
-      <label>Correo:</label>
-      <input type="email" id="correo" placeholder="Tu correo">
+  <div class="container mt-5">
 
-      <label>Pedido:</label>
-      <textarea id="mensaje" placeholder="¿Qué quieres comprar?"></textarea>
+    <h1 class="mb-4">Estadísticas de productos</h1>
 
-      <!-- Este botón llama a la función validarFormulario() que creamos -->
-      <button type="button" onclick="validarFormulario()">Enviar Pedido</button>
-    </form>
 
-  </main>
-  <script src="funciones.js"></script>
+    <table id="tablaProductos" class="table table-striped table-bordered">
+
+      <thead>
+
+        <tr>
+          <th>Producto</th>
+          <th>Categoría</th>
+          <th>Precio</th>
+          <th>Ventas</th>
+          <th>Stock</th>
+        </tr>
+
+      </thead>
+
+
+      <tbody>
+
+        <tr>
+          <td>Notebook</td>
+          <td>Tecnología</td>
+          <td>650000</td>
+          <td>15</td>
+          <td>8</td>
+        </tr>
+
+        <tr>
+          <td>Mouse</td>
+          <td>Accesorios</td>
+          <td>15000</td>
+          <td>40</td>
+          <td>20</td>
+        </tr>
+
+        <tr>
+          <td>Teclado</td>
+          <td>Accesorios</td>
+          <td>25000</td>
+          <td>32</td>
+          <td>17</td>
+        </tr>
+
+        <tr>
+          <td>Monitor</td>
+          <td>Tecnología</td>
+          <td>180000</td>
+          <td>18</td>
+          <td>12</td>
+        </tr>
+
+        <tr>
+          <td>Audífonos</td>
+          <td>Audio</td>
+          <td>35000</td>
+          <td>27</td>
+          <td>15</td>
+        </tr>
+
+        <tr>
+          <td>Webcam</td>
+          <td>Accesorios</td>
+          <td>30000</td>
+          <td>21</td>
+          <td>9</td>
+        </tr>
+
+        <tr>
+          <td>Micrófono</td>
+          <td>Audio</td>
+          <td>45000</td>
+          <td>13</td>
+          <td>7</td>
+        </tr>
+
+        <tr>
+          <td>SSD 1TB</td>
+          <td>Almacenamiento</td>
+          <td>75000</td>
+          <td>24</td>
+          <td>11</td>
+        </tr>
+
+        <tr>
+          <td>Memoria RAM</td>
+          <td>Componentes</td>
+          <td>40000</td>
+          <td>35</td>
+          <td>22</td>
+        </tr>
+
+        <tr>
+          <td>Gabinete</td>
+          <td>Componentes</td>
+          <td>55000</td>
+          <td>10</td>
+          <td>6</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <script src="https://cdn.datatables.net/2.3.3/js/dataTables.js"></script>
+
+
+  <script>
+    new DataTable('#tablaProductos');
+  </script>
+
+  </script>
+
+
 </body>
 
 </html>
