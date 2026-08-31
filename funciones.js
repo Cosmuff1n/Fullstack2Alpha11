@@ -16,7 +16,7 @@ function validarFormulario() {
         camposFaltantes.push("mensaje");
     }
 
-    if (camposVacios.length > 0) {
+    if (camposFaltantes.length > 0) {
         alert("Por favor, completa los siguientes campos:\n" + camposFaltantes.join("\n"));
         return false;
     } else {

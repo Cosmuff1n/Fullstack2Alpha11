@@ -1,5 +1,3 @@
-</html>
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,12 +9,7 @@
 
   <title>Estadísticas</title>
 
-
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-  <!-- DataTables -->
   <link rel="stylesheet" href="https://cdn.datatables.net/2.3.3/css/dataTables.dataTables.css">
 
 </head>
@@ -33,12 +26,12 @@
 
       <thead>
 
-        <tr>
-          <th>Producto</th>
-          <th>Categoría</th>
-          <th>Precio</th>
-          <th>Ventas</th>
-          <th>Stock</th>
+        <tr>                  <!-- Cada columna indica que es -->
+          <th>Producto</th>   <!-- Columna 1 es el nombre del producto -->
+          <th>Categoría</th>  <!-- Columna 2 la categoria que corresponde -->
+          <th>Precio</th>     <!-- Columna 3 el precio unitario -->
+          <th>Ventas</th>     <!-- Columna 4 cuantas unidades se vendieron -->
+          <th>Stock</th>      <!-- Columna 5 cuantas quedan en venta -->
         </tr>
 
       </thead>
@@ -132,15 +125,13 @@
 
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
   <script src="https://cdn.datatables.net/2.3.3/js/dataTables.js"></script>
 
-
   <script>
-    new DataTable('#tablaProductos');
+      new DataTable('#tablaProductos');
   </script>
-
-  </script>
-
 
 </body>
 
