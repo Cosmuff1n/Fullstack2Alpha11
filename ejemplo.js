@@ -75,15 +75,15 @@ console.log("Ejercicio 1: Calculadora");
 //Ejercicio 2
 
 edad = 19
-if(edad > 0){
-    if(edad < 18) console.log("Persona es menor de edad")
-    else{
-        if(edad<65) console.log("Persona es adulto")
+if (edad > 0) {
+    if (edad < 18) console.log("Persona es menor de edad")
+    else {
+        if (edad < 65) console.log("Persona es adulto")
 
-        else{
-            if(edad<85) console.log("Persona es adulto mayor")
-                else{
-            console.log("Persona es de años dorados")
+        else {
+            if (edad < 85) console.log("Persona es adulto mayor")
+            else {
+                console.log("Persona es de años dorados")
             }
         }
     }
@@ -131,13 +131,13 @@ console.log(findMaxNum());
 const daysOfWeek = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"];
 
 function getDayOfWeek(dayNumber) {
-if(dayNumber < 1 || dayNumber > 7) {
-    console.log("Número de día inválido. Por favor ingrese un número entre 1 y 7.");
-    return null;
-}
-else{
-  return daysOfWeek[dayNumber - 1];
-}
+    if (dayNumber < 1 || dayNumber > 7) {
+        console.log("Número de día inválido. Por favor ingrese un número entre 1 y 7.");
+        return null;
+    }
+    else {
+        return daysOfWeek[dayNumber - 1];
+    }
 }
 
 //Ejercicio 6
@@ -147,16 +147,16 @@ dayNumber = 3;
 console.log(getDayOfWeek(3));
 
 
-NumArrayFour = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,];
+NumArrayFour = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,];
 
 function searchNumberInArray(numberToSearch) {
-console.log("Buscando el número: " + numberToSearch);
-if(NumArrayFour.includes(numberToSearch)) {
-    console.log("Número encontrado.");
+    console.log("Buscando el número: " + numberToSearch);
+    if (NumArrayFour.includes(numberToSearch)) {
+        console.log("Número encontrado.");
     }
-else {
-    console.log("No se encontró el número que busca.");
-}
+    else {
+        console.log("No se encontró el número que busca.");
+    }
 
 }
 
@@ -196,13 +196,13 @@ console.log(orderAscending());
 //Ejercicio 8
 
 function writeInCaps(fname, lname) {
-  return fname.toUpperCase() + " " + lname.toUpperCase();
+    return fname.toUpperCase() + " " + lname.toUpperCase();
 }
 
 firstname = "Pepe";
 lastname = "Pulga";
 
-console.log(writeInCaps(firstname,lastname));
+console.log(writeInCaps(firstname, lastname));
 
 //Ejercicios 9 y 10
 
@@ -215,39 +215,37 @@ sb_ant = 439899
 cfamiliares = true;
 cantcargas = 3;
 
-function assignTramo(sb_ant)
-  {
-    if(sb_ant < 429899) return "a";
-    else if(sb_ant >= 429899 && sb_ant < 627913) return "b";
-  else if(sb_ant >= 627913 && sb_ant < 979330) return "c";
-  else return "d";
-  }
-
-  function calcularValorFamiliar(result_sb_ant)
-  {
-    if(result_sb_ant=="a") return 0;
-    else if(result_sb_ant=="b") return 3264;
-  else if(result_sb_ant=="c") return 10327;
-  else return 16828;
-  }
-
-  function calcularMontoTotal(valorcfamiliar, cantcargas){
-    return valorcfamiliar * cantcargas;
-  }
-
-if(cfamiliares) calcularMontoTotal(calcularValorFamiliar(assignTramo(sb_ant)), cantcargas);
-
-
-function validateBool(booleanValue){
-  if(booleanValue) return "Si";
-  else return "No";
+function assignTramo(sb_ant) {
+    if (sb_ant < 429899) return "a";
+    else if (sb_ant >= 429899 && sb_ant < 627913) return "b";
+    else if (sb_ant >= 627913 && sb_ant < 979330) return "c";
+    else return "d";
 }
 
-console.log("Nombre:" + nombre 
-  + "\nApellido:" + apellido 
-  + "\nCargas: "+ validateBool(cfamiliares) 
-  +"\nCantidad de Cargas familiares:" + cantcargas 
-  + "\nTramo: " + assignTramo(sb_ant) 
-  + "\nMonto por carga familiar: " + calcularValorFamiliar(assignTramo(sb_ant))
-  + "\nTotal Montos por cargas familiares: " + calcularMontoTotal(calcularValorFamiliar(assignTramo(sb_ant)), cantcargas)
-  + "\nSueldo del mes más cargas familiares: " + (sb_actual + calcularMontoTotal(calcularValorFamiliar(assignTramo(sb_ant)), cantcargas)));
+function calcularValorFamiliar(result_sb_ant) {
+    if (result_sb_ant == "a") return 0;
+    else if (result_sb_ant == "b") return 3264;
+    else if (result_sb_ant == "c") return 10327;
+    else return 16828;
+}
+
+function calcularMontoTotal(valorcfamiliar, cantcargas) {
+    return valorcfamiliar * cantcargas;
+}
+
+if (cfamiliares) calcularMontoTotal(calcularValorFamiliar(assignTramo(sb_ant)), cantcargas);
+
+
+function validateBool(booleanValue) {
+    if (booleanValue) return "Si";
+    else return "No";
+}
+
+console.log("Nombre:" + nombre
+    + "\nApellido:" + apellido
+    + "\nCargas: " + validateBool(cfamiliares)
+    + "\nCantidad de Cargas familiares:" + cantcargas
+    + "\nTramo: " + assignTramo(sb_ant)
+    + "\nMonto por carga familiar: " + calcularValorFamiliar(assignTramo(sb_ant))
+    + "\nTotal Montos por cargas familiares: " + calcularMontoTotal(calcularValorFamiliar(assignTramo(sb_ant)), cantcargas)
+    + "\nSueldo del mes más cargas familiares: " + (sb_actual + calcularMontoTotal(calcularValorFamiliar(assignTramo(sb_ant)), cantcargas)));

@@ -66,18 +66,34 @@ no vas a saber qué parte produjo el error. -->
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-    </main>
-    <script src="index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Website</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <main>
+     <form>
+      <label>Nombre:</label>
+      <input type="text" id="nombre" placeholder="Tu nombre">
+
+      <label>Correo:</label>
+      <input type="email" id="correo" placeholder="Tu correo">
+
+      <label>Pedido:</label>
+      <textarea id="mensaje" placeholder="¿Qué quieres comprar?"></textarea>
+
+      <!-- Este botón llama a la función validarFormulario() que creamos -->
+      <button type="button" onclick="validarFormulario()">Enviar Pedido</button>
+    </form>
+
+  </main>
+  <script src="funciones.js"></script>
+</body>
+
 </html>
