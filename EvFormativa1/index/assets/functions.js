@@ -19,7 +19,7 @@ function validarFormulario(event) {
         alert(
             "Por favor, completa los siguientes campos:\n" +
             camposFaltantes.join("\n"));
-            
+
     } else {
         alert("Login exitoso");
         window.location.replace("index.html");//redirige a la página si se cumple el login
