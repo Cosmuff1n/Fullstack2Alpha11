@@ -54,30 +54,123 @@
             <p>Petstore fue fundada por Christian Bobadilla y Gabriel Peterson en el año 1987 con el propósito de
                 entregar productos de alta calidad y cuidado integral para el bienestar animal en Chile.
             </p>
-            <iframe 
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/YEAPHWrPJrY?si=zoYLzmQCG5JOOZhi" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YEAPHWrPJrY?si=zoYLzmQCG5JOOZhi"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
 
         </section>
 
 
         <section id="productos">
-            <h2>Lista de productos</h2>
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/050/628/621/small/colorful-assorted-pet-toys-on-display-in-a-pet-store-perfect-for-christmas-shopping-or-dog-training-essentials-photo.jpg"
-                alt="Productos para mascotas" height="250"> <!-- Imagen de productos -->
+            <div class="container mt-5">
 
-            <ul>
-                <li>Platos de comida para perros</li>
-                <li>Juguetes para perros y gatos</li>
-                <li>Alimento balanceado premium</li>
-            </ul>
+                <h2 class="mb-4">Lista de productos</h2>
+
+
+                <table id="tablaProductos" class="table table-striped table-bordered">
+
+                    <thead>
+
+                        <tr> <!-- Cada columna indica que es -->
+                            <th>Producto</th> <!-- Columna 1 es el nombre del producto -->
+                            <th>Categoría</th> <!-- Columna 2 la categoria que corresponde -->
+                            <th>Precio</th> <!-- Columna 3 el precio unitario -->
+                            <th>Ventas</th> <!-- Columna 4 cuantas unidades se vendieron -->
+                            <th>Stock</th> <!-- Columna 5 cuantas quedan en venta -->
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+                            <td>Alimento Eukanuba</td>
+                            <td>Perros</td>
+                            <td>15000</td>
+                            <td>15</td>
+                            <td>8</td>
+                        </tr>
+
+                        <tr>
+                            <td>Alimento Whiskas</td>
+                            <td>Gatos</td>
+                            <td>15000</td>
+                            <td>40</td>
+                            <td>20</td>
+                        </tr>
+
+                        <tr>
+                            <td>Raton de Juguete</td>
+                            <td>Gatos</td>
+                            <td>2500</td>
+                            <td>32</td>
+                            <td>17</td>
+                        </tr>
+
+                        <tr>
+                            <td>Rueda Hamster</td>
+                            <td>Mascotas pequeñas</td>
+                            <td>180000</td>
+                            <td>18</td>
+                            <td>12</td>
+                        </tr>
+
+                        <tr>
+                            <td>Rascador</td>
+                            <td>Gatos</td>
+                            <td>35000</td>
+                            <td>27</td>
+                            <td>15</td>
+                        </tr>
+
+                        <tr>
+                            <td>Hueso</td>
+                            <td>Perros</td>
+                            <td>30000</td>
+                            <td>21</td>
+                            <td>9</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pellets</td>
+                            <td>Mascotas pequeñas</td>
+                            <td>45000</td>
+                            <td>13</td>
+                            <td>7</td>
+                        </tr>
+
+                        <tr>
+                            <td>Casita para Gatos</td>
+                            <td>Gatos</td>
+                            <td>75000</td>
+                            <td>24</td>
+                            <td>11</td>
+                        </tr>
+
+                        <tr>
+                            <td>Casita para Perros</td>
+                            <td>Perros</td>
+                            <td>40000</td>
+                            <td>35</td>
+                            <td>22</td>
+                        </tr>
+
+                        <tr>
+                            <td>Caja de arena</td>
+                            <td>Gatos</td>
+                            <td>55000</td>
+                            <td>10</td>
+                            <td>6</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
 
         </section>
 
@@ -89,6 +182,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/functions.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.datatables.net/2.3.3/js/dataTables.js"></script>
+
+    <script>
+        new DataTable('#tablaProductos');
+    </script>
 
 </body>
 
