@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body class="body">
+<body>
 
     <main class="container py-4 text-center">
         <h1 class="titulo-sitio">Pet Shop</h1>
@@ -34,17 +34,53 @@
                             <a class="nav-link" href="login.html">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-btn" href="#historia">Historia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/Cosmuff1n/Fullstack2Alpha11" target="_blank">Contacto</a>
+                            <a class="nav-btn" href="#productos">Productos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/Cosmuff1n/Fullstack2Alpha11"
+                                target="_blank">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <p>INICIO</p>
+        <section id="historia">
+            <h2>Nuestra Historia</h2>
+            <p>Petstore fue fundada por Christian Bobadilla y Gabriel Peterson en el año 1987 con el propósito de
+                entregar productos de alta calidad y cuidado integral para el bienestar animal en Chile.
+            </p>
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/YEAPHWrPJrY?si=zoYLzmQCG5JOOZhi" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+
+        </section>
+
+
+        <section id="productos">
+            <h2>Lista de productos</h2>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/050/628/621/small/colorful-assorted-pet-toys-on-display-in-a-pet-store-perfect-for-christmas-shopping-or-dog-training-essentials-photo.jpg"
+                alt="Productos para mascotas" height="250"> <!-- Imagen de productos -->
+
+            <ul>
+                <li>Platos de comida para perros</li>
+                <li>Juguetes para perros y gatos</li>
+                <li>Alimento balanceado premium</li>
+            </ul>
+
+        </section>
+
         <section class="mt-4">
             <img src="assets/cat-in-tux.png" class="img-fluid imagen-sitio" alt="Gato con traje">
         </section>
