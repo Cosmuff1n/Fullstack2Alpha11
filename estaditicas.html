@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Estadísticas</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.3/css/dataTables.dataTables.css">
+
+</head>
+
+
+<body>
+
+  <div class="container mt-5">
+
+    <h1 class="mb-4">Estadísticas de productos</h1>
+
+
+    <table id="tablaProductos" class="table table-striped table-bordered">
+
+      <thead>
+
+        <tr>                  <!-- Cada columna indica que es -->
+          <th>Producto</th>   <!-- Columna 1 es el nombre del producto -->
+          <th>Categoría</th>  <!-- Columna 2 la categoria que corresponde -->
+          <th>Precio</th>     <!-- Columna 3 el precio unitario -->
+          <th>Ventas</th>     <!-- Columna 4 cuantas unidades se vendieron -->
+          <th>Stock</th>      <!-- Columna 5 cuantas quedan en venta -->
+        </tr>
+
+      </thead>
+
+
+      <tbody>
+
+        <tr>
+          <td>Notebook</td>
+          <td>Tecnología</td>
+          <td>650000</td>
+          <td>15</td>
+          <td>8</td>
+        </tr>
+
+        <tr>
+          <td>Mouse</td>
+          <td>Accesorios</td>
+          <td>15000</td>
+          <td>40</td>
+          <td>20</td>
+        </tr>
+
+        <tr>
+          <td>Teclado</td>
+          <td>Accesorios</td>
+          <td>25000</td>
+          <td>32</td>
+          <td>17</td>
+        </tr>
+
+        <tr>
+          <td>Monitor</td>
+          <td>Tecnología</td>
+          <td>180000</td>
+          <td>18</td>
+          <td>12</td>
+        </tr>
+
+        <tr>
+          <td>Audífonos</td>
+          <td>Audio</td>
+          <td>35000</td>
+          <td>27</td>
+          <td>15</td>
+        </tr>
+
+        <tr>
+          <td>Webcam</td>
+          <td>Accesorios</td>
+          <td>30000</td>
+          <td>21</td>
+          <td>9</td>
+        </tr>
+
+        <tr>
+          <td>Micrófono</td>
+          <td>Audio</td>
+          <td>45000</td>
+          <td>13</td>
+          <td>7</td>
+        </tr>
+
+        <tr>
+          <td>SSD 1TB</td>
+          <td>Almacenamiento</td>
+          <td>75000</td>
+          <td>24</td>
+          <td>11</td>
+        </tr>
+
+        <tr>
+          <td>Memoria RAM</td>
+          <td>Componentes</td>
+          <td>40000</td>
+          <td>35</td>
+          <td>22</td>
+        </tr>
+
+        <tr>
+          <td>Gabinete</td>
+          <td>Componentes</td>
+          <td>55000</td>
+          <td>10</td>
+          <td>6</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script src="https://cdn.datatables.net/2.3.3/js/dataTables.js"></script>
+
+  <script>
+      new DataTable('#tablaProductos');
+  </script>
+
+</body>
+
+</html>
