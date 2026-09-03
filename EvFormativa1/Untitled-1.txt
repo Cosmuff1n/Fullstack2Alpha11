@@ -1,0 +1,19 @@
+Descripción general de la evaluación:
+Los/as estudiantes deberán desarrollar un sistema de registro para un sitio web de una tienda web utilizando tecnologías HTML, CSS y JavaScript.
+Este proyecto permitirá a los/as estudiantes proponer soluciones a un problema de registro que enfrentan las tiendas, implementando
+características clave para mejorar la experiencia del usuario. Debe ser capaces de:
+• Diseñar y estructurar páginas web semánticamente correctas.
+• Aplicar estilos personalizados que mejoren la apariencia y usabilidad del sitio.
+• Implementar validaciones efectivas para formularios de registro y ingreso mediante JS.
+• Configurar y utilizar un repositorio Git, realizando commits y subiendo el proyecto a GitHub.
+
+Instrucciones
+En esta fase, los/as estudiantes realizarán las siguientes actividades:
+• Implementación de la estructura y etiquetado en HTML: Los estudiantes deberán crear la estructura base del sitio web utilizando HTML5,
+asegurando un etiquetado semántico adecuado.
+• Aplicación de estilos de diseño con CSS personalizado: Los estudiantes diseñarán y aplicarán estilos personalizados utilizando CSS para
+mejorar la apariencia del sitio web.
+• Validación de formularios usando JavaScript: Implementarán validaciones de formularios utilizando JavaScript para asegurar que los
+datos ingresados por los usuarios sean correctos antes de ser enviados.
+• Configuración del proyecto con Git: Los estudiantes deberán configurar un repositorio Git para el proyecto, realizar commits regulares
+para guardar cambios y subir el proyecto a GitHub de forma pública.
