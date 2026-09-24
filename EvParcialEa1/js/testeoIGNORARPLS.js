@@ -1,4 +1,22 @@
-/*const formulario = document.getElementById("formRegistro");
+/*
+let cantidadProductos = 0;
+
+const botonesCarrito = document.querySelectorAll(".btn-carrito");
+const contador = document.getElementById("contadorCarrito");
+
+botonesCarrito.forEach(function(boton) {
+    boton.addEventListener("click", function() {
+        cantidadProductos++;
+        contador.textContent = "Productos agregados: " + cantidadProductos;
+
+        const producto = boton.dataset.producto;
+        alert(producto + " fue agregado al carrito.");
+    });
+});
+
+
+
+const formulario = document.getElementById("formRegistro");
 
 formulario.addEventListener("submit", function (event) {
     event.preventDefault();
