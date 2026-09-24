@@ -1,6 +1,7 @@
 /*
 - rem o Root em: unidad de medida segun el tamaño real del documento 
 - hover : es una funcion q le da interactividad a la pagina web y dar a conocer q el elemento es clicleable 
+- transition: permite hacer las transiciones de forma mas suaves y animadas y q asi no se vea tan brusco 
 */
 
 :root { /* es un lugar global donde definir las variables */
