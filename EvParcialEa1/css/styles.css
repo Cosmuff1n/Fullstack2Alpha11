@@ -1,13 +1,20 @@
-:root {
+/*
+- rem o Root em: unidad de medida segun el tamaño real del documento 
+- hover : es una funcion q le da interactividad a la pagina web y dar a conocer q el elemento es clicleable 
+*/
+
+:root { /* es un lugar global donde definir las variables */
   --verde-bosque: #2D5A27;
   --mostaza-calido: #E6A100;
   --gris-piedra: #708090;
   --marfil-bg: #FFFDF0;
   --blanco-puro: #ffffff;
+
+  
   --rojo-error: #e63946;
   --verde-exito: #2D5A27;
 }
-/*Textos en general*/
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +27,7 @@ body {
   color: #222222;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; 
 }
 
 header {
@@ -33,13 +40,11 @@ header {
   border-bottom: 4px solid var(--mostaza-calido);
 }
 
-/*Titulos del header*/
 header h1 {
   color: var(--mostaza-calido);
   font-size: 1.8rem;
 }
 
-/*Botones de arriba*/
 nav ul {
   display: flex;
   list-style: none;
@@ -50,22 +55,9 @@ nav a {
   color: var(--blanco-puro);
   text-decoration: none;
   font-weight: 600;
-  padding: 0.5rem 12rem;
+  padding: 0.5rem 0.8rem;
   border-radius: 4px;
   transition: all 0.3s ease;
-  margin-top: 1.5rem;
-  gap: 1.5rem;
-}
-
-nav {
-  color: var(--blanco-puro);
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.5rem 12rem;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  margin-top: 1.5rem;
-  gap: 1.5rem;
 }
 
 nav a:hover, nav a.active {
@@ -79,7 +71,7 @@ main {
   width: 90%;
   margin: 2rem auto;
 }
-/*MENU*/
+
 .hero {
   background: linear-gradient(135deg, var(--verde-bosque), var(--gris-piedra));
   color: var(--blanco-puro);
@@ -94,27 +86,10 @@ main {
   font-size: 2rem;
   margin-bottom: 0.8rem;
 }
-/*Titulos*/
-h2 {
-  font-size: 2rem;
-  margin-bottom: 0.8rem;
-  
-}
-
-.h1 {
-  font-size: 5rem;
-  margin-bottom: 0.8rem;
-
-}
 
 .hero p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
-}
-/*Campos del Contacto*/
-.campo {
-  font-size: 1.1rem;
-  margin-bottom: 0.6rem;
 }
 
 .btn-primary {
@@ -130,20 +105,7 @@ h2 {
 .btn-primary:hover {
   background-color: var(--blanco-puro);
 }
-/*Botton de compras*/
-.btn-carrito {
-    background-color: var(--verde-bosque);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 0.7rem 1.2rem;
-    margin-top: 2rem;
-    font-weight: bold;
-    cursor: pointer;
-    width: 20%;
-    gap: 1px;
-    margin-bottom: 30px;
-}
+
 
 .grid-destacados, .contenedor-productos {
   display: grid;
@@ -163,14 +125,6 @@ h2 {
 .producto-card img {
   width: 50px; 
   height: 50px; 
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-}
-
-.producto img {
-  width: 250px; 
-  height: 250px; 
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 1rem;
