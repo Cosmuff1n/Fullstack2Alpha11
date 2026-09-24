@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiendita - Inicio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
         <div class="contenedor">
@@ -18,3 +20,61 @@
             </nav>
         </div>
     </header>
+
+    <main class="contenedor">
+        <section class="hero">
+            <h2>Bienvenido a La tiendita</h2>
+            <p>Tienda donde puedes comprar cosas uwu.</p>
+        </section>
+
+        <section>
+            <h2>Productos destacados</h2>
+            <div class="productos">
+                <article class="producto">
+                    <img src="assets/1.png" alt="Articulo1">
+                    <h3>Articulo1</h3>
+                    <p>$34.990</p>
+                    <button class="btn-carrito" data-producto="Articulo1">Agregar al carrito</button>
+                </article>
+
+                <article class="producto">
+                    <img src="assets/2.png" alt="Articulo2">
+                    <h3>Articulo2</h3>
+                    <p>$19.990</p>
+                    <button class="btn-carrito" data-producto="Articulo2">Agregar al carrito</button>
+                </article>
+
+                <article class="producto">
+                    <img src="assets/3.png" alt="Articulo3">
+                    <h3>Articulo3</h3>
+                    <p>$27.990</p>
+                    <button class="btn-carrito" data-producto="Articulo3">Agregar al carrito</button>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Video recomendado</h2>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/UB1O30fR-EE" title="Video introductorio de HTML"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="estado-carrito">
+            <p id="contadorCarrito">Productos agregados: 0</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>Registro y Login</p>
+            <a href="Contacto.html">Crear una cuenta</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
