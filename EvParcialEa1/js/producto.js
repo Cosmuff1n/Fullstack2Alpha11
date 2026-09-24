@@ -23,3 +23,5 @@ const listaProductos = [
     
     
 }
+
+document.addEventListener("DOMContentLoaded", cargarProductos);
