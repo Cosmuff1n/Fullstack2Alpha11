@@ -50,7 +50,7 @@ nav a {
   color: var(--blanco-puro);
   text-decoration: none;
   font-weight: 600;
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem 12rem;
   border-radius: 4px;
   transition: all 0.3s ease;
 }
@@ -130,9 +130,9 @@ main {
   margin-bottom: 1rem;
 }
 
-.producto-card img {
-  width: 50px; 
-  height: 50px; 
+.producto img {
+  width: 250px; 
+  height: 250px; 
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 1rem;
