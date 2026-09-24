@@ -53,6 +53,19 @@ nav a {
   padding: 0.5rem 12rem;
   border-radius: 4px;
   transition: all 0.3s ease;
+  margin-top: 1.5rem;
+  gap: 1.5rem;
+}
+
+nav {
+  color: var(--blanco-puro);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 12rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+  gap: 1.5rem;
 }
 
 nav a:hover, nav a.active {
@@ -118,6 +131,19 @@ h2 {
   background-color: var(--blanco-puro);
 }
 
+.btn-carrito {
+    background-color: var(--verde-bosque);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7rem 1.2rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 20%;
+    gap: 1px;
+    margin-bottom: 30px;
+}
 
 .grid-destacados, .contenedor-productos {
   display: grid;
