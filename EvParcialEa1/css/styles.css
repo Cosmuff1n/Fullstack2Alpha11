@@ -4,12 +4,10 @@
   --gris-piedra: #708090;
   --marfil-bg: #FFFDF0;
   --blanco-puro: #ffffff;
-
-  
   --rojo-error: #e63946;
   --verde-exito: #2D5A27;
 }
-
+/*Textos en general*/
 * {
   margin: 0;
   padding: 0;
@@ -35,11 +33,13 @@ header {
   border-bottom: 4px solid var(--mostaza-calido);
 }
 
+/*Titulos del header*/
 header h1 {
   color: var(--mostaza-calido);
   font-size: 1.8rem;
 }
 
+/*Botones de arriba*/
 nav ul {
   display: flex;
   list-style: none;
@@ -79,7 +79,7 @@ main {
   width: 90%;
   margin: 2rem auto;
 }
-
+/*MENU*/
 .hero {
   background: linear-gradient(135deg, var(--verde-bosque), var(--gris-piedra));
   color: var(--blanco-puro);
@@ -94,7 +94,7 @@ main {
   font-size: 2rem;
   margin-bottom: 0.8rem;
 }
-
+/*Titulos*/
 h2 {
   font-size: 2rem;
   margin-bottom: 0.8rem;
@@ -111,7 +111,7 @@ h2 {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
-
+/*Campos del Contacto*/
 .campo {
   font-size: 1.1rem;
   margin-bottom: 0.6rem;
@@ -130,7 +130,7 @@ h2 {
 .btn-primary:hover {
   background-color: var(--blanco-puro);
 }
-
+/*Botton de compras*/
 .btn-carrito {
     background-color: var(--verde-bosque);
     color: white;
