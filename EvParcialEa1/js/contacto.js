@@ -21,7 +21,12 @@ formulario.addEventListener("submit", function (event) {
     let valido = true;
 
     if (nombre.length > 100) {
-        errorNombre.textContent =            "Ingresa un nombre de máximo 100 caracteres.";
+        errorNombre.textContent ="Ingresa un nombre de máximo 100 caracteres.";
+        valido = false;
+    }
+
+    if (nombre.length < 1) {
+        errorNombre.textContent ="El campo no puede estar vacío.";
         valido = false;
     }
 
@@ -40,9 +45,13 @@ formulario.addEventListener("submit", function (event) {
     }
 
     if (mensaje.length > 500) {
-        errorMensaje.textContent =
-            "Ingresa un mensaje de máximo 500 caracteres.";
+        errorMensaje.textContent ="Ingresa un mensaje de máximo 500 caracteres.";
 
+        valido = false;
+    }
+
+    if (mensaje.length < 1) {
+        errorMensaje.textContent ="El campo no puede estar vacío.";
         valido = false;
     }
 

@@ -1,4 +1,4 @@
-//. -. -.-. ..- . -. - .-. .- / . .-.. / ..- .-- ..-
+<!-- //. -. -.-. ..- . -. - .-. .- / . .-.. / ..- .-- ..- -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -9,6 +9,7 @@
     <title>PetStore - Contacto</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
         <div class="contenedor">
@@ -17,7 +18,7 @@
             <nav>
                 <a href="index.html">Inicio</a>
                 <a href="productos.html">Productos</a>
-                <a href="contacto.html">Contacto</a>
+                <a href="contacto.html" class="active">Contacto</a>
             </nav>
         </div>
     </header>
@@ -40,18 +41,17 @@
                 </div>
 
                 <div class="campo">
-                    <label for="nombre">Mensaje</label>
-                    <input type="text" id="mensaje" name="mensaje" autocomplete="mensaje">
+                    <label for="mensaje">Mensaje</label>
+                    <input type="text" id="mensaje" name="mensaje" autocomplete="off">
                     <small id="errorMensaje" class="error"></small>
                 </div>
 
                 <button type="submit">Enviar</button>
+
                 <p id="mensajeEnvio" class="mensaje-exito"></p>
             </form>
         </section>
     </main>
-
-
 
     <script src="js/contacto.js"></script>
 </body>
