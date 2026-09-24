@@ -1,6 +1,7 @@
 const formulario = document.getElementById("formContacto");
 
 formulario.addEventListener("submit", function (event) {
+
     event.preventDefault();
 
     const nombre = document.getElementById("nombre").value.trim();
@@ -10,7 +11,7 @@ formulario.addEventListener("submit", function (event) {
     const errorNombre = document.getElementById("errorNombre");
     const errorEmail = document.getElementById("errorEmail");
     const errorMensaje = document.getElementById("errorMensaje");
-    const mensajeRegistro = document.getElementById("mensajeRegistro");
+    const mensajeRegistro = document.getElementById("mensajeEnvio");
 
     errorNombre.textContent = "";
     errorEmail.textContent = "";
@@ -20,22 +21,28 @@ formulario.addEventListener("submit", function (event) {
     let valido = true;
 
     if (nombre.length > 100) {
-        errorNombre.textContent = "Ingresa un nombre de máximo 100 caracteres.";
+        errorNombre.textContent =            "Ingresa un nombre de máximo 100 caracteres.";
         valido = false;
     }
 
     const formatoEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (!formatoEmail.test(email)) {
         errorEmail.textContent = "Ingresa un correo electrónico válido.";
         valido = false;
     }
 
     if (email.length > 100) {
-        errorEmail.textContent = "Ingresa un mail de máximo 100 caracteres"
+        errorEmail.textContent =
+            "Ingresa un mail de máximo 100 caracteres.";
+
+        valido = false;
     }
 
     if (mensaje.length > 500) {
-        errorNombre.textContent = "Ingresa un mensaje de máximo 500 caracteres.";
+        errorMensaje.textContent =
+            "Ingresa un mensaje de máximo 500 caracteres.";
+
         valido = false;
     }
 
@@ -43,4 +50,5 @@ formulario.addEventListener("submit", function (event) {
         mensajeRegistro.textContent = "Mensaje enviado.";
         formulario.reset();
     }
+
 });
