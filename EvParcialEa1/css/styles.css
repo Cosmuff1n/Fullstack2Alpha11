@@ -1,0 +1,245 @@
+:root {
+  --verde-bosque: #2D5A27;
+  --mostaza-calido: #E6A100;
+  --gris-piedra: #708090;
+  --marfil-bg: #FFFDF0;
+  --blanco-puro: #ffffff;
+  
+  
+  --rojo-error: #e63946;
+  --verde-exito: #2D5A27;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--marfil-bg);
+  color: #222222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--verde-bosque);
+  color: var(--blanco-puro);
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid var(--mostaza-calido);
+}
+
+header h1 {
+  color: var(--mostaza-calido);
+  font-size: 1.8rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--blanco-puro);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+  color: var(--mostaza-calido);
+  background-color: rgba(230, 161, 0, 0.2);
+}
+
+main {
+  flex: 1;
+  max-width: 1100px;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--verde-bosque), var(--gris-piedra));
+  color: var(--blanco-puro);
+  text-align: center;
+  padding: 3rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+}
+
+.hero h2 {
+  color: var(--mostaza-calido);
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--mostaza-calido);
+  color: var(--verde-bosque);
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: var(--blanco-puro);
+}
+
+
+.grid-destacados, .contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card-info, .producto-card {
+  background-color: var(--blanco-puro);
+  border: 2px solid var(--gris-piedra);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.producto-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.producto-card h3, .card-info h3 {
+  color: var(--verde-bosque);
+  margin-bottom: 0.5rem;
+}
+
+.precio {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--verde-bosque);
+  margin: 0.8rem 0;
+}
+
+.btn-producto {
+  background-color: var(--verde-bosque);
+  color: var(--blanco-puro);
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-producto:hover {
+  background-color: var(--mostaza-calido);
+  color: var(--verde-bosque);
+}
+
+/* Sección Video */
+.seccion-video {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.video-container video {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 3px solid var(--verde-bosque);
+}
+
+
+.seccion-formulario {
+  background-color: var(--blanco-puro);
+  border: 2px solid var(--verde-bosque);
+  padding: 2.5rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.grupo-campo {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo-campo label {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  color: var(--verde-bosque);
+}
+
+.grupo-campo input, 
+.grupo-campo select, 
+.grupo-campo textarea {
+  padding: 0.75rem;
+  border: 2px solid var(--gris-piedra);
+  border-radius: 6px;
+  background-color: var(--marfil-bg);
+  font-size: 1rem;
+}
+
+.grupo-campo input:focus, 
+.grupo-campo select:focus, 
+.grupo-campo textarea:focus {
+  outline: none;
+  border-color: var(--verde-bosque);
+}
+
+.sugerencia {
+  font-size: 0.8rem;
+  color: #555555;
+  margin-top: 0.2rem;
+}
+
+.mensaje-error {
+  color: var(--rojo-error);
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  display: none;
+  font-weight: bold;
+}
+
+.btn-enviar {
+  background-color: var(--mostaza-calido);
+  color: var(--verde-bosque);
+  border: none;
+  padding: 0.9rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-enviar:hover {
+  background-color: var(--verde-bosque);
+  color: var(--blanco-puro);
+}
+
+
+footer {
+  background-color: var(--verde-bosque);
+  color: var(--blanco-puro);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+  border-top: 4px solid var(--mostaza-calido);
+}
