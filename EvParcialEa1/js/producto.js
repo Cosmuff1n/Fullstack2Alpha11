@@ -11,5 +11,15 @@ const listaProductos = [
 ];
 
     function cargarProductos() {
-        
-    }
+        const contenedor = document.getElementById("productos.html");
+        contenedor.innerHTML = ""
+    
+    listaProductos.forEach((producto) => {
+        const tarjeta = document.createElement("div");
+        tarjeta.classList.add("tarjeta-producto");
+
+       contenedor.appendChild(tarjeta);
+    });
+    
+    
+}
