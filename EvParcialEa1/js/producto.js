@@ -1,6 +1,6 @@
 //INDICE LISTA PRODUCTOS
 const listaProductos = [
-    { id: 1, nombre: "Arena para gatos", precio: 10000, imagen: "assets/arena_gatos.png", ancho: 100, alto: 150 },
+    { id: 1, nombre: "Arena para gatos", precio: 10000, imagen: "assets/arena_gatos.png", ancho: 100, alto: 150},
     { id: 2, nombre: "Comida para gatos", precio: 35000, imagen: "assets/comida_gatos.png", ancho: 100, alto: 150  },
     { id: 3, nombre: "Comida para perros", precio: 40000, imagen: "assets/comida_perros.png", ancho: 100, alto: 150 },
     { id: 4, nombre: "Cama para perros", precio: 15000, imagen: "assets/cama_perros.png", ancho: 100, alto: 150 },
