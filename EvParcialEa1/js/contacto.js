@@ -29,11 +29,11 @@ formulario.addEventListener("submit", function (event) {
         errorEmail.textContent = "Ingresa un correo electrónico válido.";
         valido = false;
     }
-
+/*
     if (email.length > 100) {
         errorEmail.textContent = "Ingresa un mail de máximo 100 caracteres"
     }
-
+*/
     if (mensaje.length > 500) {
         errorNombre.textContent = "Ingresa un mensaje de máximo 500 caracteres.";
         valido = false;
